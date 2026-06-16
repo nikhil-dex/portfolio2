@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nikhil — MERN Stack Developer building AI-powered web applications and modern digital experiences.">
+  <title>Nikhil | MERN Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ── PINNED WRAPPER ── -->
+  <div class="wrapper" id="wrapper">
+
+    <div class="bg-plasma" id="bgPlasma"></div>
+
+    <div class="image-container" id="imgContainer">
+      <img src="https://images.unsplash.com/photo-1589848315097-ba7b903cc1cc?q=80&w=2070&auto=format&fit=crop" alt="Creative workspace hero" id="heroImg">
+    </div>
+
+    <div class="scanlines"></div>
+
+    <div class="brackets">
+      <div class="bracket bracket-tl" id="bTL"></div>
+      <div class="bracket bracket-tr" id="bTR"></div>
+      <div class="bracket bracket-bl" id="bBL"></div>
+      <div class="bracket bracket-br" id="bBR"></div>
+    </div>
+
+    <div class="hero-overlay">
+      <div class="hero-title" id="heroTitle">
+        <div class="row"><span id="rowA">NIKHIL</span></div>
+        <div class="row row-sub"><span id="rowB">MERN STACK DEVELOPER</span></div>
+      </div>
+    </div>
+
+    <div class="badge-float" id="badgeLeft">★ MERN STACK</div>
+    <div class="badge-float pink-bg" id="badgeMid">AI PROJECTS</div>
+    <div class="badge-float orange-bg" id="badgeBot">FREELANCER</div>
+
+    <div class="deco-star" id="s1" style="top:25%;left:28%;color:var(--pink)">✦</div>
+    <div class="deco-star" id="s2" style="top:60%;left:10%;color:var(--dark)">★</div>
+    <div class="deco-star" id="s3" style="top:30%;right:25%;color:var(--orange)">✦</div>
+    <div class="deco-star" id="s4" style="bottom:28%;left:22%;color:var(--cyan)">★</div>
+
+    <a class="cp-credit scroll-hint" href="#about">
+      <span class="hud-label">Scroll to enter</span>
+      <span class="scroll-arrow">↓</span>
+    </a>
+
+    <div class="hud-bar">
+      <span class="hud-label">Nikhil Portfolio</span>
+      <div class="hud-line"></div>
+      <span class="hud-label" id="hudYear">2026</span>
+    </div>
+  </div>
+
+  <!-- ── TRANSITION SECTION ── -->
+  <div class="section-below">
+    <div class="bg-plasma"></div>
+    <div class="below-text" id="belowText">
+      MY PROJECTS<em>SHOWCASE.</em>
+    </div>
+  </div>
+
+  <!-- ── NAV ── -->
+  <nav class="site-nav" id="siteNav">
+    <a class="nav-logo" href="#">NK<span class="accent">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="main-content">
+    <!-- ── ABOUT ── -->
+    <section class="portfolio-section" id="about">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">01 — About</span>
+          <h2>Building the<br><span class="text-gradient">Future Web</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p class="lead">
+              B.Tech CSE student at <strong>MSIT</strong>, passionate about full-stack development,
+              data science, and machine learning.
+            </p>
+            <p>
+              I craft AI-powered web applications and modern digital experiences — from
+              intelligent automation tools to polished user interfaces. Currently focused on
+              the MERN stack, with deep interest in bridging AI and production-ready software.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card">
+                <span class="stat-num">2+</span>
+                <span class="stat-label">AI Projects Live</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">MERN</span>
+                <span class="stat-label">Primary Stack</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-num">Open</span>
+                <span class="stat-label">For Freelance</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual reveal">
+            <div class="about-card">
+              <div class="about-card-header">
+                <span class="dot pink"></span>
+                <span class="dot yellow"></span>
+                <span class="dot cyan"></span>
+              </div>
+              <div class="about-card-body">
+                <p class="mono-label">// profile.json</p>
+                <pre class="code-block"><code>{
+  "name": "Nikhil",
+  "role": "MERN Developer",
+  "school": "MSIT — CSE",
+  "focus": ["AI", "Web Apps", "ML"],
+  "status": "available"
+}</code></pre>
+              </div>
+            </div>
+            <div class="floating-chip chip-1">React</div>
+            <div class="floating-chip chip-2">Node.js</div>
+            <div class="floating-chip chip-3">Python</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SKILLS ── -->
+    <section class="portfolio-section section-alt" id="skills">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">02 — Skills</span>
+          <h2>Tech <span class="text-gradient">Arsenal</span></h2>
+        </div>
+        <div class="skills-categories">
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Full Stack</h3>
+            <div class="skills-grid">
+              <span class="skill-chip" data-color="pink">MERN Stack</span>
+              <span class="skill-chip" data-color="yellow">React</span>
+              <span class="skill-chip" data-color="orange">Node.js</span>
+              <span class="skill-chip" data-color="cyan">PostgreSQL</span>
+              <span class="skill-chip" data-color="pink">WordPress</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Data & ML</h3>
+            <div class="skills-grid">
+              <span class="skill-chip" data-color="cyan">Python</span>
+              <span class="skill-chip" data-color="yellow">Pandas</span>
+              <span class="skill-chip" data-color="orange">NumPy</span>
+              <span class="skill-chip" data-color="pink">Matplotlib</span>
+              <span class="skill-chip" data-color="cyan">Seaborn</span>
+              <span class="skill-chip" data-color="yellow">Scikit-Learn</span>
+              <span class="skill-chip" data-color="orange">Machine Learning</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="skill-group-title">Fundamentals</h3>
+            <div class="skills-grid">
+              <span class="skill-chip" data-color="pink">DSA in Java</span>
+              <span class="skill-chip" data-color="cyan">Git</span>
+              <span class="skill-chip" data-color="yellow">REST APIs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="portfolio-section" id="projects">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">03 — Projects</span>
+          <h2>Featured <span class="text-gradient">Work</span></h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-card-glow"></div>
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>AI</span>
+                <span>React</span>
+                <span>Full Stack</span>
+              </div>
+              <h3>PPTGen</h3>
+              <p>
+                AI-powered presentation generator with intelligent slide creation
+                and live HTML/CSS editing support. Turn ideas into polished decks in seconds.
+              </p>
+              <div class="project-links">
+                <a href="https://pptgen-omega.vercel.app/" target="_blank" rel="noopener" class="btn-primary">
+                  Live Demo →
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-icon">📊</div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-glow"></div>
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span>AI</span>
+                <span>Portfolio</span>
+                <span>Automation</span>
+              </div>
+              <h3>Protofolio</h3>
+              <p>
+                AI-powered portfolio and resume generator that helps developers
+                showcase their work with minimal effort and maximum impact.
+              </p>
+              <div class="project-links">
+                <a href="https://protofolio-six-blush.vercel.app/" target="_blank" rel="noopener" class="btn-primary">
+                  Live Demo →
+                </a>
+              </div>
+            </div>
+            <div class="project-visual">
+              <div class="project-icon">✨</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="portfolio-section section-alt" id="contact">
+      <div class="section-inner">
+        <div class="section-header reveal">
+          <span class="section-tag">04 — Contact</span>
+          <h2>Let's <span class="text-gradient">Connect</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-intro reveal">
+            <p class="lead">
+              Have a project in mind or want to collaborate? I'm open to freelance work
+              and exciting opportunities.
+            </p>
+            <a href="mailto:jincossec@gmail.com" class="btn-primary btn-large">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+              Send Email
+            </a>
+          </div>
+          <div class="contact-links reveal">
+            <a href="mailto:jincossec@gmail.com" class="contact-item">
+              <span class="contact-icon icon-email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </span>
+              <span class="contact-info">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">jincossec@gmail.com</span>
+              </span>
+            </a>
+            <a href="tel:+919266346304" class="contact-item">
+              <span class="contact-icon icon-phone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </span>
+              <span class="contact-info">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 9266346304</span>
+              </span>
+            </a>
+            <a href="https://linkedin.com/in/nikhil-b203a2242" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon icon-linkedin">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 4.126 0 2.065 2.065 0 0 1-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.222 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/>
+                </svg>
+              </span>
+              <span class="contact-info">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">nikhil</span>
+              </span>
+            </a>
+            <a href="https://github.com/nikhil-dex" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon icon-github">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+              </span>
+              <span class="contact-info">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">nikhil-dex</span>
+              </span>
+            </a>
+            <a href="https://portfolio1.nikhil-dex.in" target="_blank" rel="noopener" class="contact-item">
+              <span class="contact-icon icon-portfolio">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M2 12h20"/>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                </svg>
+              </span>
+              <span class="contact-info">
+                <span class="contact-label">Portfolio</span>
+                <span class="contact-value">portfolio1.nikhil-dex.in</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-logo">NIKHIL<span class="accent">.</span></span>
+      <p class="footer-copy">© 2026 Nikhil. Built with passion</p>
+      <a href="#" class="footer-top" id="backToTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
